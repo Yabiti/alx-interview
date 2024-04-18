@@ -7,7 +7,7 @@ figlet = Figlet()
 na = figlet.getFonts()
 
 if len(sys.argv) == 0:
-    random.shuffle(na)
+    figlet.setFont(font=random.choice(na))
 elif len(sys.argv) == 2:
     for s in na:
         print(figlet.renderText(s))
