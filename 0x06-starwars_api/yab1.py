@@ -15,3 +15,5 @@ while True:
         print()
         break
     text.append(name)
+new_text = p.join(text)
+print(new_text)
