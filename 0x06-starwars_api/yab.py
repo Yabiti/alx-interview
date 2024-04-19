@@ -13,6 +13,3 @@ elif len(sys.argv) == 2:
         print(figlet.renderText(s))
 else:
     figlet.setFont(font=random.choice(na))
-
-print(input("input: "))
-print("output", )
