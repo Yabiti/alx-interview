@@ -8,3 +8,7 @@ import inflect
 #Adieu, adieu, to Liesl, Friedrich, Louisa, Kurt, Brigitta, Marta, and Gretl
 
 p = inflect.engine()
+try:
+    input("input: ")
+except EOFError:
+    print("Error")
