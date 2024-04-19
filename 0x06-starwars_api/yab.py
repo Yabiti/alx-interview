@@ -6,13 +6,6 @@ figlet = Figlet()
 
 na = figlet.getFonts()
 
-try:
-    f = input("input: ")
-    figlet.setFont(font=random.choice(na))
-    print(na)
-except IndexError:
-    print("Error")
-
 if len(sys.argv) == 0:
     figlet.setFont(font=random.choice(na))
 elif len(sys.argv) == 2:
@@ -21,3 +14,5 @@ elif len(sys.argv) == 2:
 else:
     figlet.setFont(font=random.choice(na))
 
+print(input("input: "))
+print("output", )
