@@ -1,9 +1,10 @@
 import sys
 import random
-i = 100
+i = 1
 random.randint(1,10)
 n = int(input("level: "))
-while i > 1:
+n = int(input("Guess: "))
+while i != 100:
     if i == n:
         sys.exit("just right")
     elif i < n:
