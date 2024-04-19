@@ -21,9 +21,3 @@ elif len(sys.argv) == 2:
 else:
     figlet.setFont(font=random.choice(na))
 
-try:
-    f = input("input: ")
-    figlet.setFont(font=random.choice(na))
-    print(na)
-except IndexError:
-    print("Error")
