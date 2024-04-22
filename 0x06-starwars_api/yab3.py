@@ -10,5 +10,5 @@ while True:
         response = requests.get("https://api.coindesk.com/v1/bpi/cuuremtprice.json"+ sys.argv[1])
         print(response.json())
     except requests.RequestException:
-        sys.exit()
+        sys.exit("not a command-line argument")
 
