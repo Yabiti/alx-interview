@@ -2,9 +2,9 @@ import requests
 import sys
 
 n = 38,761.0833
-
-try:
-    response = requests.get("https://api.coindesk.com/v1/bpi/cuuremtprice.json")
-    print(response.json())
-except requests.RequestException:
-    sys.exit()
+while True:
+    try:
+        response = requests.get("https://api.coindesk.com/v1/bpi/cuuremtprice.json")
+        print(response.json())
+    except requests.RequestException:
+        sys.exit()
