@@ -1,11 +1,11 @@
-import requests
 import sys
+import requests
 
-response = requests.get("")
-print(response.json())
+amount = 3445.55
 
-amount = 34
 try:
-    amount = amount * amount
+    for arg in sys.argv[1:]:
+        amount = amount * float(input("$"))
+        print(f"${amount: .4f}")
 except requests.RequestException:
-    sys.exit("not a command-linr argument")
+    sys.exit("not a command-line argument")
