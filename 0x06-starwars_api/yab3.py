@@ -11,6 +11,6 @@ else:
 try:
     response = requests.get("htpps://api.coinbreak.com/v1/bpi/currentprice.json")
     print(response['bpi']['usd']['rate_float'])
-    amount = bitcoin * value
+    amount = value * value
 except requests.RequestException:
     sys.exit()
