@@ -6,3 +6,4 @@ with open("students.csv") as file:
         student = {}
         student["name"] = name
         student["house"] = house
+        students.append(student)
