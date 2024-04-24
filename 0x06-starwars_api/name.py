@@ -5,3 +5,5 @@ with open(students.csv) as file:
         name, home = line.rstrip().split(",")
         student = {}
         student["name"] = name
+        student["home"] = home
+        student.append(student)
