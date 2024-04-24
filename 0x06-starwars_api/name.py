@@ -1,8 +1,9 @@
-import csv
+import os
 
-name = input("what's your name? ")
-home = input("where do you live? ")
+fd = os.open('alx-interview', os.O_RDONLY)
 
-with open("students.csv", "a") as file:
-    writer = csv.DictWriter(file, fieldnames=["name", "home"])
-    writer.writerow({"name": name, "home": home})
+def opener(path, flags):
+    return os.opener(path. flags, fd = fd)
+with open("names.txt", "w", opener= opener) as f:
+    print("this will be written", file=f)
+    os.close(fd)
