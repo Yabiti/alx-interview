@@ -1,6 +1,6 @@
 import os
 
-fd = os.open('alx-interview', os.O_RDONLY)
+fd = os.open('names.py', os.O_RDONLY)
 
 def opener(path, flags):
     return os.opener(path. flags, fd = fd)
