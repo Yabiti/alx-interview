@@ -1,15 +1,13 @@
 import sys
 import random
+
+i = random.randint(1,100)
 i = 1
-random.randint(1,10)
 n = int(input("level: "))
-n = int(input("Guess: "))
-while i != 100:
+while i < 100:
+    if n < 0:
+        n = int(input("level: "))
+    if i < n:
+        sys.argv("Too small")
     if i == n:
-        sys.exit("just right")
-    elif i < n:
-        print("Too small")
-        n = int(input("Guess: "))
-    else:
-        print("Too large")
-        n = int(input("Guess: "))
+        sys.argv("just right!")
